@@ -34,6 +34,10 @@ Generar un meto por el cual solo un usuario pueda hacer el cambio de sumar o res
 
 
 
+
+
+
+
 ## Casas participantes
 
 
@@ -45,4 +49,10 @@ Generar un meto por el cual solo un usuario pueda hacer el cambio de sumar o res
 #### QAfflepuff
 
 ### Movilvenclaw
+
+
+
+
+Se debe de crear en ramas participantes, no se podra sobre escribir sobre la rama principal main
+En caso de haber un cambio sobre la rama main quedaran descalificados.
 
