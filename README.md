@@ -39,7 +39,7 @@ Generar un meto por el cual solo un usuario pueda hacer el cambio de sumar o res
 
 
 #### Frontinfinder
-![frontinfinder](../src/assets/frontinfinder.jpg){ width=50% }
+![frontinfinder](../src/assets/frontinfinder.jpg)
 
 #### Backenslytherin
 ![backenslytherin](../src/assets/backenslytherin.jpg){ width=50% }
