@@ -38,15 +38,11 @@ Generar un meto por el cual solo un usuario pueda hacer el cambio de sumar o res
 
 
 
-<!-- #### Frontinfinder
-![frontinfinder](../src/assets/frontinfinder.jpg)
+#### Frontinfinder
 
 #### Backenslytherin
-![backenslytherin](../src/assets/backenslytherin.jpg){ w
 
 #### QAfflepuff
-![qafflepuff](../src/assets/qafflepuff.jpg){ width=50% }
 
 ### Movilvenclaw
 
-![movilvenclaw](../src/assets/movilvenclaw.jpg){width=50%} -->
