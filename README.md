@@ -1,8 +1,52 @@
-# React + Vite
+# Marcador de las casas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Clonar el repositorio
 
-Currently, two official plugins are available:
+Para clonar el repositorio, ejecute el siguiente comando en su terminal:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+git clone https://github.com/usuario/nombre-repositorio.git
+```
+
+
+# Reto: Solo yo puedo darte puntos.
+
+El Reto de esta ocasion es el siguiente
+
+Generar un meto por el cual solo un usuario pueda hacer el cambio de sumar o restar puntos
+
+
+
+## Requisitos del Reto
+
+1. Solo un usuario puede hacer el cambio de sumar o restar puntos.
+2. No se puede usar un sistema de login.
+3. No solo una persona puede hacer el cambio.
+4. Los botones deben estar desactivados inicialmente.
+
+
+
+
+#### En este caso se jugaran 
+
+
+* # 30 puntos
+
+
+
+## Casas participantes
+
+
+
+#### Frontinfinder
+![frontinfinder](../src/assets/frontinfinder.jpg){ width=50% }
+
+#### Backenslytherin
+![backenslytherin](../src/assets/backenslytherin.jpg){ width=50% }
+
+#### QAfflepuff
+![qafflepuff](../src/assets/qafflepuff.jpg){ width=50% }
+
+### Movilvenclaw
+
+![movilvenclaw](../src/assets/movilvenclaw.jpg){width=50%}
