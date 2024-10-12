@@ -1,22 +1,28 @@
 import { Box } from "@mui/material";
 import React from "react";
 
+import frontifinder from '../assets/frontifinder.jpg';
+import backensliterin from '../assets/backensliterin.jpg';
+import qafflepuff from '../assets/qafflepuff.jpg';
+import movilvenclaw from '../assets/movilvenclaw.jpg';
+
+
 const casas = [
   {
     nombre: "Frontifinder",
-    escudo: "../assets/frontifinder.jpg",
+    escudo: frontifinder,
   },
   {
     nombre: "Backensliterin",
-    escudo: "../assets/backensliterin.jpg",
+    escudo: backensliterin,
   },
   {
     nombre: "Quafelpop",
-    escudo: "../assets/qafflepuff.jpg",
+    escudo: qafflepuff,
   },
   {
     nombre: "Movilvenclaw",
-    escudo: "../assets/movilvenclaw.jpg",
+    escudo: movilvenclaw,
   },
 ];
 
