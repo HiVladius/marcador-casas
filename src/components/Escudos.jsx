@@ -1,10 +1,15 @@
 import { Box } from "@mui/material";
 import React from "react";
 
-import frontifinder from '../../public/frontifinder.jpg';
-import backensliterin from '../../public/backensliterin.jpg';
-import qafflepuff from '../../public/qafflepuff.jpg';
-import movilvenclaw from '../../public/movilvenclaw.jpg';
+// import frontifinder from '../../public/frontifinder.jpg';
+// import backensliterin from '../../public/backensliterin.jpg';
+// import qafflepuff from '../../public/qafflepuff.jpg';
+// import movilvenclaw from '../../public/movilvenclaw.jpg';
+
+import frontifinder from '../assets/frontifinder.jpg';
+import backensliterin from '../assets/backensliterin.jpg';
+import qafflepuff from '../assets/qafflepuff.jpg';
+import movilvenclaw from '../assets/movilvenclaw.jpg';
 
 
 const casas = [
