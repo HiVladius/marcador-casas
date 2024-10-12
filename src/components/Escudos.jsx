@@ -24,7 +24,11 @@ export const Escudos = () => {
   return (
     <Box>
       {casas.map((casa) => (
-        <img key={casa.nombre} src={casa.escudo} alt={casa.nombre} />
+        <img 
+        key={casa.nombre} 
+        src={casa.escudo} 
+        alt={casa.nombre} 
+        />
       ))}
     </Box>
   );
