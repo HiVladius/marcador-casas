@@ -67,7 +67,7 @@ const Marcador = () => {
             />
             <Typography>{equipo}</Typography>
             <Typography variant="h2">{puntajes[equipo]}</Typography>
-            {/* <Box mt={6}>
+            <Box mt={6}>
               <Button
                 startIcon={<AddCircle />}
                 onClick={() => sumarPuntos(equipo)}
@@ -80,7 +80,7 @@ const Marcador = () => {
               >
                 Restar
               </Button>
-            </Box> */}
+            </Box>
           </Box>
         ))}
       </Box>
