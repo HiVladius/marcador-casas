@@ -37,10 +37,10 @@ const Marcador = () => {
   };
 
   const imagenesCasas = {
-    Frontifinder: "../../public/frontinfinder.jpg",
-    Backensliterin: "../../public/backenslytherin.jpg",
-    Quafelpop: "../../public/qafflepuff.jpg",
-    Movilvenclaw: "../../public/movilvenclaw.jpg",
+    Frontifinder: "/frontinfinder.jpg",
+    Backensliterin: "/backenslytherin.jpg",
+    Quafelpop: "/qafflepuff.jpg",
+    Movilvenclaw: "/movilvenclaw.jpg",
   };
 
   return (
