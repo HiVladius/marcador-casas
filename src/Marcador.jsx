@@ -4,29 +4,72 @@ import { AddCircle, RemoveCircle } from "@mui/icons-material";
 
 const Marcador = () => {
   const [puntajes, setPuntajes] = useState({
-    Frontifinder: 0,
+    Frontifinder: 200,
     Backensliterin: 0,
     Quafelpop: 0,
     Movilvenclaw: 0,
   });
 
-  const modificarPuntaje = (equipo, puntos) => {
-    setPuntajes((prevPuntajes) => {
-      const nuevosPuntajes = {
-        ...prevPuntajes,
-        [equipo]: Math.max(prevPuntajes[equipo] + puntos, 0),
-      };
-      localStorage.setItem("puntajes", JSON.stringify(nuevosPuntajes));
-      return nuevosPuntajes;
-    });
-  };
+  const [isPageLoaded, setisPageLoaded] = useState(false);
 
   useEffect(() => {
-    const savedPuntajes = localStorage.getItem("puntajes");
-    if (savedPuntajes) {
-      setPuntajes(JSON.parse(savedPuntajes));
-    }
+    const handleLoad = () => {
+      setisPageLoaded(true);
+    };
+    window.addEventListener("load", handleLoad);
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
   }, []);
+
+  useEffect(() => {
+    if (isPageLoaded) {
+      const obtenerPuntajes = async () => {
+        try {
+          const response = await fetch("http://localhost:3000/api/puntajes");
+          if (!response.ok) {
+            throw new Error("Error al obtener puntajes");
+          }
+          const data = await response.json();
+          const puntajesObj = data.reduce((acc, curr) => {
+            acc[curr.equipo] = curr.puntos;
+            return acc;
+          }, {});
+          setPuntajes(puntajesObj);
+        } catch (error) {
+          console.error("Error al parsear la respuesta JSON", error);
+        }
+      };
+
+      obtenerPuntajes();
+    }
+  }, [isPageLoaded]);
+
+  const modificarPuntaje = async (equipo, puntos) => {
+    try {
+      const response = await fetch("http://localhost:3000/api/puntajes", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ equipo, puntos: puntajes[equipo] + puntos }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Error al modificar puntaje");
+      }
+
+      const data = await response.json();
+      setPuntajes((prevPuntajes) => ({
+        ...prevPuntajes,
+        [equipo]: data.puntos,
+      }));
+    } catch (error) {
+      console.error("Error al modificar puntaje", error);
+    }
+  };
+
 
   const sumarPuntos = (equipo) => {
     modificarPuntaje(equipo, 5);
