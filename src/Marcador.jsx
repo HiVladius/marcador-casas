@@ -4,7 +4,7 @@ import { AddCircle, RemoveCircle } from "@mui/icons-material";
 
 const Marcador = () => {
   const [puntajes, setPuntajes] = useState({
-    Frontifinder: 200,
+    Frontifinder: 0,
     Backensliterin: 0,
     Quafelpop: 0,
     Movilvenclaw: 0,
